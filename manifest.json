@@ -1,0 +1,36 @@
+{
+    "name": "swap",
+    "version": "1.0",
+	"description": "Uniswap Extension!",
+	"permissions": ["activeTab", "declarativeContent","storage","https://*.uniswap.exchange/*"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+	},
+	"commands":
+	{
+		"toggle" : 
+		{
+			"suggested_key": {
+				"default": "Alt+S",
+				"mac": "Command+Shift+S" 
+			},
+			"description" : "create uniswap window!"
+		}
+	},
+	"options_page": "options.html",
+    "browser_action": {
+	
+		"default_icon": {
+		
+			"32": "images/icon32.png",
+		
+			"128": "images/icon.png"
+		}
+	  },
+	"icons": {
+		"32": "images/icon32.png",
+		"128": "images/icon.png"
+	  },
+    "manifest_version": 2
+  }
